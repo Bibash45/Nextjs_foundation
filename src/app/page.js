@@ -9,6 +9,7 @@ export default function Home() {
       <Image src={pic} 
       width={500}
       height={300}
+      alt="image"
       />
     </div>
 

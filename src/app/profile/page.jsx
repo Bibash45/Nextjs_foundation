@@ -1,11 +1,7 @@
-import React from 'react'
+import React from "react";
 
 const page = () => {
-  return (
-    <div>
-      Profile page ho yo ke xa 
-    </div>
-  )
-}
+  return <div className="global-text">Profile page ho yo ke xa</div>;
+};
 
-export default page
+export default page;
