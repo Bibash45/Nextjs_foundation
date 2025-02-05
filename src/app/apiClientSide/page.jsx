@@ -1,4 +1,5 @@
 "use client";
+import Menu from "@/components/Menu";
 import React, { useEffect, useState } from "react";
 
 const page = () => {
@@ -14,6 +15,7 @@ const page = () => {
 
   return (
     <div>
+      <Menu />
       <h1 className="text-3xl">Call api</h1>
       {data.map((item, index) => {
         return (
