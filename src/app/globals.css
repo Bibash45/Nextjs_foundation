@@ -24,3 +24,10 @@ body {
 .global-text{
   color: red;
 }
+
+.active-link{
+  color: red !important;
+}
+.pending-link{
+  color: blue !important;
+}
