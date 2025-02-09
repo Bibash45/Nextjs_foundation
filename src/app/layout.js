@@ -3,6 +3,7 @@ import "./globals.css";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
 import { Raleway } from "next/font/google";
 import localFont from "next/font/local";
+import Script from "next/script";
 
 // Load the Sunshine font
 const sunshine = localFont({
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${raleway.variable} ${sunshine.variable}`}>
       <body>
+        <Script src={"https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"} />
         {children}
         <ProgressBar
           height="2px"
