@@ -6,6 +6,7 @@ const page = () => {
     <div>
       <Menu />
       This is admin page
+      <h1>API KEY : {process.env.NEXT_PUBLIC_API_KEY}</h1>
     </div>
   )
 }
