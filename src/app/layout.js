@@ -1,10 +1,17 @@
 "use client";
 import "./globals.css";
 import { AppProgressBar as ProgressBar } from "next-nprogress-bar";
+import { Raleway } from "next/font/google";
+
+const raleway = Raleway({
+  subsets: ["latin"],
+  weight: ["300", "400", "900"],
+  variable: "--font-raleway",
+});
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html lang="en" className={raleway.variable}>
       <body>
         {children}
         <ProgressBar
